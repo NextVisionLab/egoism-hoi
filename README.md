@@ -1,14 +1,13 @@
 # Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario
+
+![](assets/images/pipeline-loop.gif)
+
 This repository contains the implementation of the following paper:
 * [Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario]()
 
 If you find the code, pre-trained models, or the *EgoISM-HOI* dataset useful for your research, please citing the following paper:
 ```
-@inproceedings{leonardi2022egocentric,
-  title={Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario},
-  author={Leonardi, Rosario and Ragusa, Francesco and Furnari, Antonino and Farinella, Giovanni Maria},
-  year={2023},
-}
+Coming soon.
 ```
 
 Additionally, consider citing the original paper:
@@ -60,21 +59,25 @@ Download our pre-trained models and put them in the `weights` folder:
 
 To replicate the results of the paper, train your model using these pre-trained [weights](https://iplab.dmi.unict.it/sharing/egoism-hoi/weights/faster_rcnn_R_101_FPN_3x_midas_v21-f6b98070.pth). Additional details are reported in the paper.
 
-## Train
+## Proposed Approach
+
+![](assets/images/schema-rete-loop.gif)
+
+### Train
 To train the system enter the following command:
 ```
 python train.py --train_json ./data/egoism-hoi-dataset/annotations/train_coco.json --test_json ./data/egoism-hoi-dataset/annotations/val_coco.json --test_dataset_names val --weights_path /home/rleonardi/data/weights/ehoi_detectron2/faster_rcnn_R_101_FPN_3x_midas_v21-f6b98070.pth --mask_gt
 ```
 Check more about argparse parameters in `train.py`.
 
-## Test
+### Test
 To test the models run the command below:
 ```
 python test.py --dataset_json ./data/egoism-hoi-dataset/annotations/r_test_coco.json --dataset_images ./data/egoism-hoi-dataset/images/ --weights_path ./weights/383__33_lf/model_final.pth 
 ```
 Check more about argparse parameters in `test.py`.
 
-## Inference
+### Inference
 Run the command below for an example of inference. A new folder **output_detection** will be created with the visualization:
 ```
 python inference.py --weights_path <weights_path> --images_path <images_path>
