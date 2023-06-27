@@ -3,11 +3,16 @@
 ![](assets/images/pipeline-loop.gif)
 
 This repository contains the implementation of the following paper:
-* [Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario]()
+* [Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario](https://arxiv.org/abs/2306.12152)
 
 If you find the code, pre-trained models, or the *EgoISM-HOI* dataset useful for your research, please citing the following paper:
 ```
-Coming soon.
+@article{leonardi2023exploiting,
+  title={Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario},
+  author={Leonardi, Rosario and Ragusa, Francesco and Furnari, Antonino and Farinella, Giovanni Maria},
+  journal={arXiv preprint arXiv:2306.12152},
+  year={2023}
+}
 ```
 
 Additionally, consider citing the original paper:
