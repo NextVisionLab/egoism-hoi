@@ -71,7 +71,7 @@ To replicate the results of the paper, train your model using these pre-trained 
 ### Train
 To train the system enter the following command:
 ```
-python train.py --train_json ./data/egoism-hoi-dataset/annotations/train_coco.json --test_json ./data/egoism-hoi-dataset/annotations/val_coco.json --test_dataset_names val --weights_path /home/rleonardi/data/weights/ehoi_detectron2/faster_rcnn_R_101_FPN_3x_midas_v21-f6b98070.pth --mask_gt
+python train.py --train_json ./data/egoism-hoi-dataset/annotations/train_coco.json --test_json ./data/egoism-hoi-dataset/annotations/val_coco.json --test_dataset_names val --weights_path ./weights/faster_rcnn_R_101_FPN_3x_midas_v21-f6b98070.pth --mask_gt
 ```
 Check more about argparse parameters in `train.py`.
 
