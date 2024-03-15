@@ -10,6 +10,7 @@ If you find the code, pre-trained models, or the *EgoISM-HOI* dataset useful for
 @article{LEONARDI2024103984,
   title = {Exploiting multimodal synthetic data for egocentric human-object interaction detection in an industrial scenario},
   journal = {Computer Vision and Image Understanding},
+  volume = {242},
   pages = {103984},
   year = {2024},
   issn = {1077-3142},
